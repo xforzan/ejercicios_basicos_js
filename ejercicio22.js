@@ -12,12 +12,12 @@ const foodSchedule = [
 let vegan= []
 
 for (let i = 0; i < fruits.length; i++) {
-    vegan.push({ name: fruits[i], isVegan: false });
+    vegan.push({ name: fruits[i], isVegan: true });
 }
 
 
 for (i=0; i<foodSchedule.length; i++){
-    if(foodSchedule[i].isVegan===false){
+    if(foodSchedule[i].isVegan===true){
         vegan.push(foodSchedule[i])
 
     }
